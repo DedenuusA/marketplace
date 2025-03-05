@@ -156,3 +156,7 @@ route::delete('/komentar/{id}' , [KomentarController::class, 'destroy'])->name('
 // Route::get('/test', [DashboardController::class, 'test'])->name('tabledit.action');
 
 Route::get('/user/api', [UserApiController::class,'userapi']);
+
+Route::get('/404', function() {
+      abort(404);
+});
